@@ -539,8 +539,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4b98b7bc7d1d8446810e6f49ab2442f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _runAcceleration: 5
+  _gravity: 9.8
+  _runAcceleration: 500
   _runSpeed: 5
+  _jumpForce: 10
   _camera: {fileID: 330585545}
 --- !u!143 &1134991176
 CharacterController:
@@ -560,13 +562,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
+  m_Height: 1.7
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.85, z: 0.16}
 --- !u!1 &1199508796
 GameObject:
   m_ObjectHideFlags: 0
